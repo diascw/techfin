@@ -1,4 +1,4 @@
-import { StatsCard } from "../molecules/states-card";
+import { StatsCard } from "../molecules/stats-card";
 import { ArrowDownIcon, ArrowUpIcon, DollarSign, Wallet } from "lucide-react";
 import type { MonthlyStats } from "@/lib/types/types.ts";
 
