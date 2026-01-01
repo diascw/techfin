@@ -124,7 +124,7 @@ export default async function DashboardPage() {
   return (
     <div className="min-h-screen bg-background">
       <DashboardHeader userName={profile?.full_name} />
-      <main className="container px-4 py-8 max-w-7xl">
+      <main className="mx-auto w-full px-4 py-8 max-w-7xl">
         <div className="space-y-8 animate-fade-in">
           <div className="flex items-center justify-between">
             <div>

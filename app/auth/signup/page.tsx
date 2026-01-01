@@ -71,10 +71,10 @@ export default function SignUpPage() {
           <Image
             src="/images/logo-black.jpeg"
             alt="Logo Techfin"
-            width={140}
-            height={40}
+            width={440}
+            height={240}
             priority
-            className="h-auto w-384"
+            className="h-240 w-484"
           />
         </div>
         <Card className="border-border/50 backdrop-blur">

@@ -30,17 +30,15 @@ export function DashboardHeader({ userName }: DashboardHeaderProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between px-4">
+      <div className="container flex min-h-[72px] items-center justify-between">
+        {" "}
         <div className="flex items-center gap-2">
-          <Image
-            src="/images/logo-techfin.png"
-            alt="Logo Techfin"
-            width={120}
-            height={32}
-            priority
+          <img
+            src="/images/logo.png"
+            alt="Techfin"
+            className="h-9 w-auto sm:h-11 md:h-12"
           />
         </div>
-
         <div className="flex items-center gap-3">
           {userName && (
             <div className="flex items-center gap-2">
