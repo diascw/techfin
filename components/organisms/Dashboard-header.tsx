@@ -33,7 +33,7 @@ export function DashboardHeader({ userName }: DashboardHeaderProps) {
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center gap-2">
           <Image
-            src="/logo.png"
+            src="/images/logo-techfin.png"
             alt="Logo Techfin"
             width={120}
             height={32}

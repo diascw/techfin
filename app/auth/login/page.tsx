@@ -1,6 +1,10 @@
 "use client";
 
 import type React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -13,9 +17,6 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -47,19 +48,23 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen w-full items-center justify-center bg-gradient-to-br from-background via-background to-green-950/20 p-6">
       <div className="w-full max-w-sm animate-fade-in">
-        <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Techfin
-          </h1>
-          <p className="text-muted-foreground mt-2">Gestão Financeira</p>
+        <div className="mb-8 flex justify-center">
+          <Image
+            src="/images/logo-black.jpeg"
+            alt="Logo Techfin"
+            width={140}
+            height={40}
+            priority
+            className="h-auto w-384"
+          />
         </div>
+
         <Card className="border-border/50 backdrop-blur">
           <CardHeader>
             <CardTitle className="text-2xl">Login</CardTitle>
-            <CardDescription>
-              Entre com sua conta para acessar o dashboard
-            </CardDescription>
+            <CardDescription>Acesse a sua conta</CardDescription>
           </CardHeader>
+
           <CardContent>
             <form onSubmit={handleLogin}>
               <div className="flex flex-col gap-6">
@@ -74,6 +79,7 @@ export default function LoginPage() {
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
+
                 <div className="grid gap-2">
                   <Label htmlFor="password">Senha</Label>
                   <Input
@@ -84,11 +90,14 @@ export default function LoginPage() {
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
+
                 {error && <p className="text-sm text-destructive">{error}</p>}
+
                 <Button type="submit" className="w-full" disabled={isLoading}>
                   {isLoading ? "Entrando..." : "Entrar"}
                 </Button>
               </div>
+
               <div className="mt-4 text-center text-sm">
                 Não tem uma conta?{" "}
                 <Link
