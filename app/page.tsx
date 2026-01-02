@@ -52,7 +52,7 @@ export default function LandingPage() {
             </Button>
             <Button asChild className="gap-2">
               <Link href="/auth/signup">
-                Começar Grátis
+                Cadastra-se
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </Button>
@@ -309,7 +309,7 @@ export default function LandingPage() {
             </p>
             <Button size="lg" asChild className="gap-2">
               <Link href="/auth/signup">
-                Começar Gratuitamente
+                Cadastre-se
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
