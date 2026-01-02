@@ -11,7 +11,6 @@ interface CategoryProps {
 export function Category({ category, icon, name, color }: CategoryProps) {
   const displayIcon = category?.icon || icon;
   const displayName = category?.name || name;
-  const displayColor = category?.color || color;
 
   return (
     <Badge variant="secondary" className="text-xs">
