@@ -76,7 +76,7 @@ export default function LandingPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" asChild className="gap-2">
                 <Link href="/auth/signup">
-                  Começar Agora
+                  Cadastre-se
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
