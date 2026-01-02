@@ -110,6 +110,7 @@ export function ExpensesChart({ data }: ExpensesChartProps) {
             <Tooltip content={<CustomTooltip />} />
           </PieChart>
         </ResponsiveContainer>
+
         <div className="mt-6">
           <ItemGroup>
             {data.map((item) => (
@@ -118,7 +119,6 @@ export function ExpensesChart({ data }: ExpensesChartProps) {
                   className="size-3 rounded-full"
                   style={{ backgroundColor: item.category.color || "#10b981" }}
                 />
-
                 <ItemContent>
                   <ItemTitle>
                     {item.category.icon} {item.category.name}
