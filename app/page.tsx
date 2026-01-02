@@ -287,7 +287,7 @@ export default function LandingPage() {
                 <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mb-4">
                   3
                 </div>
-                <CardTitle>Analise e Melhore</CardTitle>
+                <CardTitle>Análises financeiras</CardTitle>
                 <CardDescription>
                   Veja gráficos, receba recomendações e tome decisões
                   financeiras mais inteligentes
