@@ -18,7 +18,7 @@ import {
   BarChartBig as ChartBar,
   Wallet,
 } from "lucide-react";
-import { Logo } from "@/components/atoms/Logo";
+import { Logo } from "@/components/atoms/logo";
 
 export default function LandingPage() {
   return (
