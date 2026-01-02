@@ -60,7 +60,7 @@ export default function LandingPage() {
         </div>
       </header>
 
-      <section className="container mx-auto px-4 py-20 md:py-15">
+      <section className="container mx-auto px-4 py-10 md:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-balance">
@@ -91,53 +91,13 @@ export default function LandingPage() {
 
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl rounded-full" />
-            <div className="relative bg-card border rounded-2xl shadow-2xl overflow-hidden">
-              <div className="bg-muted/50 border-b px-4 py-3 flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500" />
-                <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                <div className="w-3 h-3 rounded-full bg-green-500" />
-              </div>
-              <div className="p-6 space-y-4">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-muted-foreground">Saldo Total</p>
-                    <p className="text-3xl font-bold text-primary">
-                      R$ 12.450,00
-                    </p>
-                  </div>
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Wallet className="w-8 h-8 text-primary" />
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <Card>
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-sm">Receitas</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-xl font-bold text-green-600">
-                        +R$ 15.000
-                      </p>
-                    </CardContent>
-                  </Card>
-                  <Card>
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-sm">Despesas</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-xl font-bold text-red-600">
-                        -R$ 2.550
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-                <div className="h-32 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg flex items-end gap-2 p-4">
-                  <div className="w-full h-12 bg-primary/60 rounded" />
-                  <div className="w-full h-16 bg-primary/70 rounded" />
-                  <div className="w-full h-24 bg-primary/80 rounded" />
-                  <div className="w-full h-20 bg-primary rounded" />
-                </div>
-              </div>
+
+            <div className="relative flex items-center justify-center lg:-mt-10">
+              <img
+                src="/images/mockup.png"
+                alt="Demon"
+                className="w-full h-auto max-w-[600px] drop-shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -158,181 +118,99 @@ export default function LandingPage() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
-            <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-              <div className="w-7 h-7 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-primary" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <CardTitle>Registros</CardTitle>
-                <CardDescription>
-                  Registre receitas e despesas rapidamente com categorização
-                  automática e histórico completo
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
-
-          <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
-            <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-              <div className="w-7 h-7 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
-                <PieChart className="w-6 h-6 text-primary" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <CardTitle>Gráficos</CardTitle>
-                <CardDescription>
-                  Visualize seus gastos por categoria com gráficos interativos e
-                  fáceis de entender
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
-
-          <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
-            <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-              <div className="w-7 h-7 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
-                <Lightbulb className="w-6 h-6 text-primary" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <CardTitle>Recomendações</CardTitle>
-                <CardDescription>
-                  Receba dicas e alertas sobre pontos de atenção baseados nos
-                  seus hábitos financeiros
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
-
-          <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
-            <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-              <div className="w-7 h-7 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
-                <ChartBar className="w-6 h-6 text-primary" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <CardTitle>Análise Mensal</CardTitle>
-                <CardDescription>
-                  Acompanhe seu progresso mês a mês e identifique oportunidades
-                  de economia
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
-
-          <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
-            <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-              <div className="w-7 h-7 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
-                <Shield className="w-6 h-6 text-primary" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <CardTitle>Segurança</CardTitle>
-                <CardDescription>
-                  Seus dados financeiros protegidos com criptografia e
-                  autenticação segura
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
-
-          <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
-            <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-              <div className="w-7 h-7 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
-                <Smartphone className="w-6 h-6 text-primary" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <CardTitle>Acesso Simplificado</CardTitle>
-                <CardDescription>
-                  Plataforma que funciona perfeitamente em desktop, tablet e
-                  mobile.
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
+          {[
+            {
+              icon: TrendingUp,
+              title: "Registros",
+              desc: "Registre receitas e despesas rapidamente com categorização automática e histórico completo",
+            },
+            {
+              icon: PieChart,
+              title: "Gráficos",
+              desc: "Visualize seus gastos por categoria com gráficos interativos e fáceis de entender",
+            },
+            {
+              icon: Lightbulb,
+              title: "Recomendações",
+              desc: "Receba dicas e alertas sobre pontos de atenção baseados nos seus hábitos financeiros",
+            },
+            {
+              icon: ChartBar,
+              title: "Análise Mensal",
+              desc: "Acompanhe seu progresso mês a mês e identifique oportunidades de economia",
+            },
+            {
+              icon: Shield,
+              title: "Segurança",
+              desc: "Seus dados financeiros protegidos com criptografia e autenticação segura",
+            },
+            {
+              icon: Smartphone,
+              title: "Acesso Simplificado",
+              desc: "Disponível em todo Brasil.",
+            },
+          ].map((feature, i) => (
+            <Card
+              key={i}
+              className="border-2 hover:border-primary/50 transition-all hover:shadow-lg"
+            >
+              <CardHeader className="flex flex-row items-start gap-4 space-y-0">
+                <div className="w-7 h-7 shrink-0 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <feature.icon className="w-5 h-5 text-primary" />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <CardTitle>{feature.title}</CardTitle>
+                  <CardDescription>{feature.desc}</CardDescription>
+                </div>
+              </CardHeader>
+            </Card>
+          ))}
         </div>
       </section>
 
       <section id="how-it-works" className="container mx-auto px-4 py-15">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-balance">
-            Como Funciona
+            Como Funciona?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Comece a controlar suas finanças em 3 passos simples
+            Comece a controlar suas finanças agora mesmo
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="relative">
-            <div className="absolute top-0 left-8 w-0.5 h-full bg-gradient-to-b from-primary to-transparent hidden md:block" />
-            <Card className="relative z-10 h-full">
-              <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-                <div className="w-8 h-8 shrink-0 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mt-1">
-                  1
-                </div>
-                <div className="flex flex-col gap-1">
-                  <CardTitle>Crie sua Conta</CardTitle>
-                  <CardDescription>
-                    Cadastre-se gratuitamente em segundos. Não é necessário
-                    cartão de crédito
-                  </CardDescription>
-                </div>
-              </CardHeader>
-            </Card>
-          </div>
-
-          <div className="relative">
-            <div className="absolute top-0 left-8 w-0.5 h-full bg-gradient-to-b from-primary to-transparent hidden md:block" />
-            <Card className="relative z-10 h-full">
-              <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-                <div className="w-8 h-8 shrink-0 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mt-1">
-                  2
-                </div>
-                <div className="flex flex-col gap-1">
-                  <CardTitle>Registre suas Transações</CardTitle>
-                  <CardDescription>
-                    Adicione suas receitas, despesas com categorias
-                    personalizadas com base no seu perfil
-                  </CardDescription>
-                </div>
-              </CardHeader>
-            </Card>
-          </div>
-
-          <div className="relative">
-            <Card className="relative z-10 h-full">
-              <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-                <div className="w-8 h-8 shrink-0 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mt-1">
-                  3
-                </div>
-                <div className="flex flex-col gap-1">
-                  <CardTitle>Análises financeiras</CardTitle>
-                  <CardDescription>
-                    Veja gráficos, receba recomendações e tome decisões
-                    financeiras mais inteligentes
-                  </CardDescription>
-                </div>
-              </CardHeader>
-            </Card>
-          </div>
+          {[
+            {
+              n: 1,
+              t: "Crie sua Conta",
+              d: "Cadastre-se gratuitamente em segundos. Não é necessário cartão de crédito.",
+            },
+            {
+              n: 2,
+              t: "Registre suas Transações",
+              d: "Adicione suas receitas, despesas com categorias personalizadas com base no seu perfil.",
+            },
+            {
+              n: 3,
+              t: "Análises financeiras",
+              d: "Veja gráficos, receba recomendações e tome decisões financeiras mais inteligentes.",
+            },
+          ].map((step) => (
+            <div key={step.n} className="relative">
+              <Card className="relative z-10 h-full">
+                <CardHeader className="flex flex-row items-start gap-4 space-y-0">
+                  <div className="w-8 h-8 shrink-0 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mt-1">
+                    {step.n}
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <CardTitle>{step.t}</CardTitle>
+                    <CardDescription>{step.d}</CardDescription>
+                  </div>
+                </CardHeader>
+              </Card>
+            </div>
+          ))}
         </div>
-      </section>
-
-      <section className="container mx-auto px-4 py-15">
-        <Card className="bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border-2 border-primary/20">
-          <CardContent className="p-12 text-center space-y-6">
-            <h2 className="text-3xl md:text-5xl font-bold text-balance">
-              Pronto para transformar suas finanças?
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Junte-se ao Techfin e fique no controle do seu dinheiro
-            </p>
-            <Button size="lg" asChild className="gap-2">
-              <Link href="/auth/signup">
-                Cadastre-se
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </Button>
-          </CardContent>
-        </Card>
       </section>
 
       <Footer />
