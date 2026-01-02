@@ -33,19 +33,13 @@ export async function updateSession(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  // Redirect to login if accessing dashboard without authentication
   if (request.nextUrl.pathname.startsWith("/dashboard") && !user) {
     const url = request.nextUrl.clone();
     url.pathname = "/auth/login";
     return NextResponse.redirect(url);
   }
 
-  // Redirect to dashboard if accessing auth pages while authenticated
-  if (
-    (request.nextUrl.pathname.startsWith("/auth") ||
-      request.nextUrl.pathname === "/") &&
-    user
-  ) {
+  if (request.nextUrl.pathname.startsWith("/auth") && user) {
     const url = request.nextUrl.clone();
     url.pathname = "/dashboard";
     return NextResponse.redirect(url);

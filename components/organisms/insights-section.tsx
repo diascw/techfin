@@ -177,7 +177,7 @@ export function InsightsSection({
 
   return (
     <div className="space-y-4 animate-slide-up">
-      <h3 className="text-xl font-semibold">Dicas e Recomendações</h3>
+      <h3 className="text-xl font-semibold">Feito para você</h3>
       {insights.map((insight, index) => (
         <InsightCard
           key={index}

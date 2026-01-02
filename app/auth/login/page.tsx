@@ -50,7 +50,7 @@ export default function LoginPage() {
       <div className="w-full max-w-sm animate-fade-in">
         <div className="mb-8 flex justify-center">
           <Image
-            src="/images/logo-black.jpeg"
+            src="/images/logo.png"
             alt="Logo Techfin"
             width={140}
             height={40}

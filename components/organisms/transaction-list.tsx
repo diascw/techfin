@@ -6,16 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import {
-  Item,
-  ItemGroup,
-  ItemMedia,
-  ItemContent,
-  ItemTitle,
-  ItemDescription,
-  ItemSeparator,
-} from "@/components/ui/item";
 import {
   Empty,
   EmptyHeader,
@@ -23,10 +13,8 @@ import {
   EmptyTitle,
   EmptyDescription,
 } from "@/components/ui/empty";
-import { TransactionTypeIcon } from "@/components/atoms/transaction-type-icon";
-import { CurrencyText } from "@/components/atoms/currency-text";
-import { Category } from "../atoms/category";
 import { Inbox } from "lucide-react";
+import { TransactionListClient } from "./transaction-list-client";
 
 interface TransactionListProps {
   userId: string;
@@ -67,51 +55,5 @@ export async function TransactionList({ userId }: TransactionListProps) {
     );
   }
 
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Transações Recentes</CardTitle>
-        <CardDescription>Suas últimas movimentações</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <ScrollArea className="h-[400px] pr-4">
-          <ItemGroup>
-            {transactions.map((transaction, index) => (
-              <>
-                <Item
-                  key={transaction.id}
-                  variant="default"
-                  className="hover:bg-accent/50 transition-colors"
-                >
-                  <ItemMedia variant="icon">
-                    <TransactionTypeIcon type={transaction.type} />
-                  </ItemMedia>
-                  <ItemContent>
-                    <ItemTitle>
-                      {transaction.category?.name || "Sem categoria"}
-                    </ItemTitle>
-                    <ItemDescription>
-                      {transaction.description || "Sem descrição"} •{" "}
-                      {new Date(transaction.date).toLocaleDateString("pt-BR")}
-                    </ItemDescription>
-                  </ItemContent>
-                  <ItemContent>
-                    <CurrencyText
-                      amount={transaction.amount}
-                      type={transaction.type}
-                      className="text-base font-semibold"
-                    />
-                    {transaction.category && (
-                      <Category category={transaction.category} />
-                    )}
-                  </ItemContent>
-                </Item>
-                {index < transactions.length - 1 && <ItemSeparator />}
-              </>
-            ))}
-          </ItemGroup>
-        </ScrollArea>
-      </CardContent>
-    </Card>
-  );
+  return <TransactionListClient transactions={transactions} />;
 }

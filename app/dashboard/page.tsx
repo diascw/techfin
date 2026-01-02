@@ -7,6 +7,7 @@ import { TransactionButton } from "@/components/molecules/transaction-button";
 import { ExpensesChart } from "@/components/organisms/expenses-chart";
 import { InsightsSection } from "@/components/organisms/insights-section";
 import type { MonthlyStats, CategoryStats } from "@/lib/types/types.ts";
+import Footer from "@/components/organisms/Footer";
 
 async function getMonthlyStats(userId: string): Promise<MonthlyStats> {
   const supabase = await createClient();
@@ -146,6 +147,7 @@ export default async function DashboardPage() {
             expensesByCategory={expensesByCategory}
           />
         </div>
+        <Footer />
       </main>
     </div>
   );
