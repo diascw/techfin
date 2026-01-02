@@ -62,7 +62,7 @@ export default function LandingPage() {
         </div>
       </header>
 
-      <section className="container mx-auto px-4 py-10 md:py-20">
+      <section className="container mx-auto px-4 md:py-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-balance">
