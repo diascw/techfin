@@ -96,7 +96,7 @@ export default function LandingPage() {
 
             <div className="relative flex items-center justify-center lg:-mt-10">
               <img
-                src="/images/mockup.png"
+                src="/images/mockup-0.png"
                 alt="Demon"
                 className="w-full h-auto max-w-[600px] drop-shadow-2xl"
               />

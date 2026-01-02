@@ -69,18 +69,17 @@ export default function SignUpPage() {
       <div className="w-full max-w-sm animate-fade-in">
         <div className="mb-8 flex justify-center">
           <Image
-            src="/images/logo-black.jpeg"
+            src="/images/logo.png"
             alt="Logo Techfin"
-            width={440}
-            height={240}
+            width={240}
+            height={140}
             priority
-            className="h-240 w-484"
+            className="w-auto h-auto"
           />
         </div>
         <Card className="border-border/50 backdrop-blur">
           <CardHeader>
-            <CardTitle className="text-2xl">Criar Conta</CardTitle>
-            <CardDescription>Preencha os dados para começar</CardDescription>
+            <CardTitle className="text-2xl">Dados Pessoais</CardTitle>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSignUp}>
