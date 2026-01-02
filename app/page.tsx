@@ -70,8 +70,8 @@ export default function LandingPage() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground text-pretty max-w-2xl">
-              Registre receitas e despesas, visualize gráficos inteligentes e
-              receba insights personalizados para melhorar sua saúde financeira.
+              Registre receitas e despesas, visualize gráficos e receba dicas
+              personalizados para melhorar sua saúde financeira.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" asChild className="gap-2">
