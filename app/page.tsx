@@ -27,21 +27,21 @@ export default function LandingPage() {
           <Logo />
           <nav className="hidden md:flex gap-6 items-center">
             <Link
-              href="#features"
+              href="#recursos"
               className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors group py-2"
             >
               Recursos
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
-              href="#how-it-works"
+              href="#como-funciona"
               className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors group py-2"
             >
               Como Funciona
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full" />
             </Link>
             <Link
-              href="#benefits"
+              href="#beneficios"
               className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors group py-2"
             >
               Benefícios
@@ -73,7 +73,7 @@ export default function LandingPage() {
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground text-pretty max-w-2xl">
               Registre receitas e despesas, visualize gráficos e receba dicas
-              personalizados para melhorar sua saúde financeira.
+              personalizadas para melhorar sua saúde financeira.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" asChild className="gap-2">
@@ -170,7 +170,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="how-it-works" className="container mx-auto px-4 py-15">
+      <section id="home" className="container mx-auto px-4 py-15">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-balance">
             Como Funciona?

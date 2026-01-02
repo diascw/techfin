@@ -160,10 +160,6 @@ export function InsightsSection({
         <CardContent>
           <Empty>
             <EmptyHeader>
-              <EmptyMedia variant="icon">
-                <Sparkles />
-              </EmptyMedia>
-              <EmptyTitle>Aguardando dados</EmptyTitle>
               <EmptyDescription>
                 Adicione transações para receber recomendações personalizadas e
                 dicas financeiras baseadas nos seus gastos.

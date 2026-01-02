@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Techfin - seu dinheiro, do seu jeito ",
+  title: "Techfin - Gestão Financeira ",
   description: "Gestão Financeira",
 
   icons: {
