@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Dropdown } from "./Dropdown";
-import { Logo } from "../atoms/logo";
+import { Logo } from "../atoms/Logo";
 
 export function Footer() {
   return (

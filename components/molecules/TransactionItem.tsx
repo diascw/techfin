@@ -10,10 +10,10 @@ import {
 } from "@/components/ui/item";
 import { TransactionTypeIcon } from "@/components/atoms/TransactionTypeIcon";
 import { CurrencyText } from "@/components/atoms/CurrencyText";
-import { Category } from "../atoms/category";
 import { Button } from "@/components/ui/button";
 import { Trash2 } from "lucide-react";
 import { useState } from "react";
+import { Category } from "../atoms/Category";
 
 interface TransactionItemProps {
   transaction: Transaction & {
