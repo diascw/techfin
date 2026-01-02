@@ -1,5 +1,5 @@
-import { Category } from "@/components/atoms/category";
-import { CurrencyText } from "@/components/atoms/currency-text";
+import { CurrencyText } from "@/components/atoms/CurrencyText";
+import { Category } from "../atoms/category";
 
 interface CategoryListItemProps {
   icon: string;

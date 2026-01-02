@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Logo } from "@/components/atoms/logo";
-import { Dropdown } from "@/components/organisms/Dropdown";
+import { Logo } from "@/components/atoms/Logo";
+import { Dropdown } from "./Dropdown";
 
 export function Footer() {
   return (

@@ -7,7 +7,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Logo } from "@/components/atoms/logo";
+import { Logo } from "@/components/atoms/Logo";
+import { Footer } from "@/components/organisms/Footer";
 import {
   TrendingUp,
   PieChart,
@@ -18,7 +19,6 @@ import {
   BarChartBig as ChartBar,
   Wallet,
 } from "lucide-react";
-import Footer from "@/components/organisms/Footer";
 
 export default function LandingPage() {
   return (

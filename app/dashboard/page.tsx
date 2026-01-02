@@ -1,11 +1,11 @@
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
-import { DashboardHeader } from "@/components/organisms/dashboard-header";
-import { StatsOverview } from "@/components/organisms/stats-overview";
-import { TransactionList } from "@/components/organisms/transaction-list";
-import { TransactionButton } from "@/components/molecules/transaction-button";
-import { ExpensesChart } from "@/components/organisms/expenses-chart";
-import { InsightsSection } from "@/components/organisms/insights-section";
+import { DashboardHeader } from "@/components/organisms/DashboardHeader";
+import { StatsOverview } from "@/components/organisms/StatsOverview";
+import { TransactionList } from "@/components/organisms/TransactionList";
+import { TransactionButton } from "@/components/molecules/TransactionButton";
+import { ExpensesChart } from "@/components/organisms/ExpensesChart";
+import { InsightsSection } from "@/components/organisms/InsightsSection";
 import type { MonthlyStats, CategoryStats } from "@/lib/types/types.ts";
 import Footer from "@/components/organisms/Footer";
 

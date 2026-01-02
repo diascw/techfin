@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import { useState } from "react";
-import { TransactionFormDialog } from "@/components/organisms/transaction-form-dialog";
+import { TransactionFormDialog } from "@/components/organisms/TransactionFormDialog";
 
 interface TransactionButtonProps {
   userId: string;

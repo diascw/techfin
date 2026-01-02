@@ -8,7 +8,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import type { CategoryStats, MonthlyStats } from "@/lib/types/types.ts";
-import { InsightCard } from "@/components/molecules/insight-card";
+import { InsightCard } from "@/components/molecules/InsightCard";
 import {
   Empty,
   EmptyHeader,

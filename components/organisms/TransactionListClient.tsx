@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ItemGroup, ItemSeparator } from "@/components/ui/item";
-import { TransactionItem } from "@/components/molecules/transaction-item";
+import { TransactionItem } from "@/components/molecules/TransactionItem";
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

@@ -14,7 +14,7 @@ import {
   EmptyDescription,
 } from "@/components/ui/empty";
 import { Inbox } from "lucide-react";
-import { TransactionListClient } from "./transaction-list-client";
+import { TransactionListClient } from "./TransactionListClient";
 
 interface TransactionListProps {
   userId: string;
