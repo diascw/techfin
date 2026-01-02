@@ -105,7 +105,7 @@ export default function LandingPage() {
                       R$ 12.450,00
                     </p>
                   </div>
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                     <Wallet className="w-8 h-8 text-primary" />
                   </div>
                 </div>
