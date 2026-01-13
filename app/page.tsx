@@ -132,11 +132,6 @@ export default function LandingPage() {
               desc: "Visualize seus gastos por categoria com gráficos interativos e fáceis de entender",
             },
             {
-              icon: Lightbulb,
-              title: "Recomendações",
-              desc: "Receba dicas e alertas sobre pontos de atenção baseados nos seus hábitos financeiros",
-            },
-            {
               icon: ChartBar,
               title: "Análise Mensal",
               desc: "Acompanhe seu progresso mês a mês e identifique oportunidades de economia",

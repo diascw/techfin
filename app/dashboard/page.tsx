@@ -5,7 +5,6 @@ import { StatsOverview } from "@/components/organisms/StatsOverview";
 import { TransactionList } from "@/components/organisms/TransactionList";
 import { TransactionButton } from "@/components/molecules/TransactionButton";
 import { ExpensesChart } from "@/components/organisms/ExpensesChart";
-import { InsightsSection } from "@/components/organisms/InsightsSection";
 import type { MonthlyStats, CategoryStats } from "@/lib/types/types.ts";
 import Footer from "@/components/organisms/Footer";
 
@@ -141,11 +140,6 @@ export default async function DashboardPage() {
             <TransactionList userId={user.id} />
             <ExpensesChart data={expensesByCategory} />
           </div>
-
-          <InsightsSection
-            stats={stats}
-            expensesByCategory={expensesByCategory}
-          />
         </div>
         <Footer />
       </main>

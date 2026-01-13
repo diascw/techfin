@@ -20,6 +20,7 @@ export function Footer() {
             <Link
               href="https://docs.google.com/document/d/e/2PACX-1vT0pJW-rDbohrDtDXAIe9HbViUhLyW-rwWlNdez3f30tbF0S6ryHYjVfv_aEb9vytvrMgzqGbhkjSO2/pub"
               className="hover:text-foreground transition-colors"
+              target="_blank"
             >
               Termos
             </Link>
