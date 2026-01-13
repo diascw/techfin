@@ -15,13 +15,13 @@ import {
   Smartphone,
   ArrowRight,
   BarChartBig as ChartBar,
-  Wallet,
 } from "lucide-react";
 import { Logo } from "@/components/atoms/logo";
+import Timeline from "@/components/organisms/Timeline";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background via-background to-muted/20 scroll-smooth">
+    <div className="min-h-screen bg-white from-background via-background to-muted/20 scroll-smooth">
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 flex items-center justify-between h-16">
           <Logo />
@@ -107,7 +107,7 @@ export default function LandingPage() {
 
       <section
         id="features"
-        className="container mx-auto px-4 py-20 bg-muted/30 rounded-3xl my-15"
+        className="container mx-auto px-4 py-10 bg-white rounded-3xl my-10"
       >
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-balance">
@@ -131,20 +131,11 @@ export default function LandingPage() {
               title: "Gráficos",
               desc: "Visualize seus gastos por categoria com gráficos interativos e fáceis de entender",
             },
-            {
-              icon: ChartBar,
-              title: "Análise Mensal",
-              desc: "Acompanhe seu progresso mês a mês e identifique oportunidades de economia",
-            },
+
             {
               icon: Shield,
               title: "Segurança",
               desc: "Seus dados financeiros protegidos com criptografia e autenticação segura",
-            },
-            {
-              icon: Smartphone,
-              title: "Acesso Simplificado",
-              desc: "Disponível em todo Brasil.",
             },
           ].map((feature, i) => (
             <Card
@@ -166,48 +157,7 @@ export default function LandingPage() {
       </section>
 
       <section id="home" className="container mx-auto px-4 py-15">
-        <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-balance">
-            Como Funciona?
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Comece a controlar suas finanças agora mesmo
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              n: 1,
-              t: "Crie sua Conta",
-              d: "Cadastre-se gratuitamente em segundos. Não é necessário cartão de crédito.",
-            },
-            {
-              n: 2,
-              t: "Registre suas Transações",
-              d: "Adicione suas receitas, despesas com categorias personalizadas com base no seu perfil.",
-            },
-            {
-              n: 3,
-              t: "Análises financeiras",
-              d: "Veja gráficos, receba recomendações e tome decisões financeiras mais inteligentes.",
-            },
-          ].map((step) => (
-            <div key={step.n} className="relative">
-              <Card className="relative z-10 h-full">
-                <CardHeader className="flex flex-row items-start gap-4 space-y-0">
-                  <div className="w-8 h-8 shrink-0 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mt-1">
-                    {step.n}
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <CardTitle>{step.t}</CardTitle>
-                    <CardDescription>{step.d}</CardDescription>
-                  </div>
-                </CardHeader>
-              </Card>
-            </div>
-          ))}
-        </div>
+        <Timeline />
       </section>
 
       <Footer />
