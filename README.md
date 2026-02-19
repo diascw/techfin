@@ -4,3 +4,4 @@
 *  gerenciamento de contas
 * gráficos em tempo real
 * segurança
+* previsão de gastos 
