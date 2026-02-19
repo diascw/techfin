@@ -1,4 +1,4 @@
-### projeto sobre finanças
+### Gerenciador de finanças pessoais
 * controle de gastos
 *  receita
 *  gerenciamento de contas
